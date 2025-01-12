@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export DEBIAN_FRONTEND=noninteractive
-
+ 
 # Check if the script is run as root
 if [ "$(id -u)" -ne 0 ]; then
     /usr/bin/echo "This script must be run as root (with sudo)."
@@ -34,7 +34,6 @@ dependencies=(
   "procps"
   "sysstat"
   "net-tools"
-  "hostname"
   "coreutils"
   "systemd"
   "lsb-release"
